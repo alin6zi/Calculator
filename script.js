@@ -58,7 +58,7 @@ doubleZero.addEventListener('click', () => {
     }
 });
 // zero
-doubleZero.addEventListener('click', () => {
+nuZero.addEventListener('click', () => {
     if (currentExpression == "" && currentDisplay == "") {
         clearLine();
         clearBox();

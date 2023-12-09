@@ -1,7 +1,6 @@
 const displayLine = document.getElementById('display');
 const evalLine = document.getElementById('print');
-const numberButtons = document.querySelectorAll('.butt-num .number
-');
+const numberButtons = document.querySelectorAll('.butt-num .number');
 const doubleZero = document.getElementById('btn10');
 const numberZero = document.getElementById('btn0');
 const pointBtn = document.getElementById('btn11');

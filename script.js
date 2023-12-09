@@ -111,7 +111,7 @@ opsBtn.forEach(button => {
 evBtn.addEventListener('click', () => {
     if (Boolean(displayLine.innerHTML) == true && Boolean(evalLine.innerHTML) == false) {
         let a = eval(currentExpression);
-        currentExpression = a.toString;
+        currentExpression = a.toString();
         updateDsp();
         updateLine();
 

@@ -3,7 +3,7 @@ const evalLine = document.getElementById('print');
 const numberButtons = document.querySelectorAll('.butt-num .number
 ');
 const doubleZero = document.getElementById('btn10')
-const doubleZero = document.getElementById('btn11')
+const doubleZero = document.getElementById('btn0')
 const pointBtn = document.getElementById('btn11');
 const addBtn = document.getElementById('opadd');
 const subBtn = document.getElementById('opsub');

@@ -68,7 +68,7 @@ numberZero.addEventListener('click', () => {
         updateBox();
     }
     else if (currentExpression != "" && currentDisplay != "") {
-        currentExpression = "";
+        currentExpression = 0;
         updateBox();
         clearLine();
         resetExp();

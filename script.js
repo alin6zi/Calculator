@@ -2,6 +2,7 @@ const displayLine = document.getElementById('display');
 const evalLine = document.getElementById('print');
 const numberButtons = document.querySelectorAll('.butt-num .number ');
 const doubleZero = document.getElementById('btn10')
+const doubleZero = document.getElementById('btn11')
 const pointBtn = document.getElementById('btn11');
 const addBtn = document.getElementById('opadd');
 const subBtn = document.getElementById('opsub');
@@ -55,8 +56,25 @@ doubleZero.addEventListener('click', () => {
         resetDsp();
     }
 });
-
-
+// zero
+doubleZero.addEventListener('click', () => {
+    if (currentExpression == "" && currentDisplay == "") {
+        clearLine();
+        clearBox();
+        resetExp();
+    }
+    else if (currentExpression != "" && currentDisplay == "") {
+        currentExpression += "00";
+        updateBox();
+    }
+    else if (currentExpression != "" && currentDisplay != "") {
+        currentExpression = 0;
+        updateBox();
+        clearLine();
+        resetExp();
+        resetDsp();
+    }
+});
 // float point
 pointBtn.addEventListener('click', () => {
     (currentExpression == 0) ? pointF1() : pointF2();

@@ -102,7 +102,7 @@ numberZero.addEventListener('click', () => {
         currentExpression = '';
         clearLine();
         updateBox();
-        resetDsp();
+        resetExp();
     }
     else if (displayLine.innerHTML == "0" && evalLine.innerHTML == "") {
         currentExpression += "";

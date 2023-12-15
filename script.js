@@ -90,7 +90,7 @@ doubleZero.addEventListener('click', () => {
         }
     }
     else if (displayLine.innerHTML != "" && evalLine.innerHTML != "") {
-        currentExpression = "";
+        currentExpression = 0;
         updateBox();
         clearLine();
     }
@@ -102,7 +102,6 @@ numberZero.addEventListener('click', () => {
         currentExpression = '';
         clearLine();
         updateBox();
-        resetExp();
     }
     else if (displayLine.innerHTML == "0" && evalLine.innerHTML == "") {
         currentExpression += "";
